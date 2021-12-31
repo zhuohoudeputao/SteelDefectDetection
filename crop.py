@@ -1,9 +1,7 @@
 """图像裁剪工具
 """
 
-import numpy as np
 import cv2 as cv
-import matplotlib.pyplot as plt
 
 def crop2048x2048(img):
     """裁剪2048x2048的图像为两张1024x1024的图像（去除黑色区域）
@@ -52,5 +50,3 @@ def crop2single(jpg_path):
         img_list = crop1024xN(img)
     for i, im in enumerate(img_list):
         cv.imwrite(jpg_path[:-4] + str(i) + '.jpg', im)
-
-crop2single('data/000.jpg')
