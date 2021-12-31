@@ -2,6 +2,27 @@
 
 钢材缺陷检测
 
+## 环境配置
+
+### Python3安装
+
+Windows系统下，需要到[https://www.python.org/downloads/](https://www.python.org/downloads/) 下载安装包进行安装。
+
+### 项目配置
+
+
+首先使用git clone项目到本地
+
+```shell
+git clone https://github.com/zhuohoudeputao/SteelDefectDetection.git
+```
+
+此时执行上述语句的目录会新增一个SteelDefectDetection目录，cd进入该目录，安装依赖项
+
+```shell
+python3 -m pip install -U -r requirements.txt
+```
+
 ## 数据
 
 从数据来说，我们一开始获得的数据应该是.his文件或者.dicom文件，转换后得到的应该是1024x1024大小的钢管焊缝图，因此数据预处理部分需要的任务是
@@ -23,4 +44,10 @@
 1. 使用灰度值分布直方图，观察结果是：
    1. 可以使用一个较高的过滤值过滤掉
 2. 
+
+## 文献调研
+
+[1]李金燕,李春祥,王锡岭.焊缝缺陷图像特征提取的研究[J].焊接技术,2018,47(11):78-82+6.DOI:10.13846/j.cnki.cn12-1070/tg.2018.11.023.
+
+通过平滑滤波预和模糊增强预处理图像，通过阈值法分割背景和主要目标，再采用8连通区域判别法进行缺陷分割，最终计算缺陷的特征用于分类
 
