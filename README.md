@@ -10,7 +10,6 @@ Windows系统下，需要到[https://www.python.org/downloads/](https://www.pyth
 
 ### 项目配置
 
-
 首先使用git clone项目到本地
 
 ```shell
@@ -22,6 +21,8 @@ git clone https://github.com/zhuohoudeputao/SteelDefectDetection.git
 ```shell
 python3 -m pip install -U -r requirements.txt
 ```
+
+然后就可以愉快地开始浏览代码和开发工作了。
 
 ## 数据
 
@@ -47,7 +48,9 @@ python3 -m pip install -U -r requirements.txt
 
 ## 文献调研
 
-[1]李金燕,李春祥,王锡岭.焊缝缺陷图像特征提取的研究[J].焊接技术,2018,47(11):78-82+6.DOI:10.13846/j.cnki.cn12-1070/tg.2018.11.023.
+| 引用 | 主要内容 |
+| --- | --- | 
+|[1]李金燕,李春祥,王锡岭.焊缝缺陷图像特征提取的研究[J].焊接技术,2018,47(11):78-82+6.DOI:10.13846/j.cnki.cn12-1070/tg.2018.11.023.  | 通过平滑滤波预和模糊增强预处理图像，通过阈值法分割背景和主要目标，再采用8连通区域判别法进行缺陷分割，最终计算缺陷的特征用于分类 |  
+|  |  |
 
-通过平滑滤波预和模糊增强预处理图像，通过阈值法分割背景和主要目标，再采用8连通区域判别法进行缺陷分割，最终计算缺陷的特征用于分类
 
